@@ -94,12 +94,20 @@
             font-size: 16pt;
             font-family: 'Open Sans', sans-serif;
         }
+        @media all and (max-width : 768px) {
+            .video-container {
+                height: 1280px;
+            }
+            video {
+                height: 1280px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="video-container">
-        <video autoplay plays-inline controls poster="img/loading.gif">
+        <video autoplay playsinline controls poster="img/loading.gif">
             <source src="vid/clhoe.mp4" type="video/mp4">
         </video>
     </div>

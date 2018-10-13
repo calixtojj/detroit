@@ -103,7 +103,7 @@ li > a:only-child::after {
     display: none;
 }
 
-@media all and (max-width : 780px) {
+@media all and (max-width : 768px) {
 
     #logo {
         display: block;
