@@ -40,12 +40,6 @@ nav a:hover {
     color: #f6fafb;
 }
 
-nav a:active {
-    background: #7ca6ca;
-    color: #f6fafb;
-}
-
-
 nav ul {
     float: left;
     padding: 0;
