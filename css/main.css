@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6fafb;
+}
+
+#logo {
+    display: block;
+    float: left;
+    padding: 0 30px;
+    height: 60px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background-color: #f6fafb;
+    font-family: "Lato", serif;
+    text-transform: uppercase;
+}
+
+nav a {
+    display: block;
+    padding: 0 20px;
+    color: #191619;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+nav a:hover {
+    background: #1e4460;
+    color: #f6fafb;
+}
+
+nav a:active {
+    background: #7ca6ca;
+    color: #f6fafb;
+}
+
+
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    background-color: #f6fafb;
+}
+
+
+
+nav ul li ul li:hover {
+    background: #1e4460;
+    color: #f6fafb;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a::after {
+    content: ' +';
+}
+
+li > a:only-child::after {
+    content: '';
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+@media all and (max-width : 780px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        background-color: #f6fafb;
+        padding: 0 20px;
+        color: #191619;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+    }
+
+    .toggle:hover {
+        background-color: #1e4460;
+        color: #f6fafb;
+        transition: all .4s ease;
+    }
+
+    [id^=drop]:checked + ul {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+        background-color: #999;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #7ca6ca;
+    }
+
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #f6fafb;
+    }
+
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+
+    }
+}
+
+[lang="en"]{
+    font-style: italic;
+}

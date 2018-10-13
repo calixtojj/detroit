@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jefferson Calixto">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Detroit: Become Human Experience</title>
+    <style>
+        .video-container {
+            height: 100vh;
+            position: relative;
+            z-index: -100;
+        }
+        
+        video {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100vh;
+            z-index: -100;
+            -webkit-transition-position: fixed;
+            position: fixed;
+        }
+
+        section:nth-of-type(1) {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/img/bg/bg1.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 500;
+        }
+
+        section:nth-of-type(2) {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/img/bg/bg2.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 500;
+        }
+
+        section:nth-of-type(3) {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/img/bg/bg3.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 500;
+        }
+
+        section:nth-of-type(4) {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/img/bg/bg4.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 500;
+        }
+
+        section:nth-of-type(5) {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/img/bg/bg5.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 500;
+        }
+
+        p {
+            background-color: #f6fafb;
+            box-sizing: border-box;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+            font-size: 16pt;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay poster="img/loading.gif">
+            <source src="vid/clhoe.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <div id="logo"><img src="img/led.png" alt="Display de led presente em modelos de andróides" /></div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">Personagens</label>
+                <a href="#">Personagens</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li>
+
+                        <!-- Second Tier Drop Down -->
+                        <label for="drop-2" class="toggle">Núcleo Connor</label>
+                        <a href="#">Connor</a>
+                        <input type="checkbox" id="drop-2" />
+                        <ul>
+                            <li><a href='#'>Connor</a></li>
+                            <li><a href='#'>Hank</a></li>
+                            <li><a href='#'>Amanda</a></li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <!-- Second Tier Drop Down -->
+                        <label for="drop-3" class="toggle">Núcleo Kara</label>
+                        <a href="#">Kara</a>
+                        <input type="checkbox" id="drop-3" />
+                        <ul>
+                            <li><a href='#'>Kara</a></li>
+                            <li><a href='#'>Alice</a></li>
+                            <li><a href='#'>Todd</a></li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <!-- Second Tier Drop Down -->
+                        <label for="drop-4" class="toggle">Núcleo Markus</label>
+                        <a href="#">Markus</a>
+                        <input type="checkbox" id="drop-4" />
+                        <ul>
+                            <li><a href='#'>Markus</a></li>
+                            <li><a href='#'>Carl</a></li>
+                            <li><a href='#'>North</a></li>
+                            <li><a href='#'>Josh</a></li>
+                            <li><a href='#'>Simon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <!-- Second Tier Drop Down -->
+                        <label for="drop-5" class="toggle">mais Pesonagens</label>
+                        <a href="#">[...]</a>
+                        <input type="checkbox" id="drop-5" />
+                        <ul>
+                            <li><a href='#'>Luther</a></li>
+                            <li><a href='#'>Rose</a></li>
+                            <li><a href='#'>Zlatko</a></li>
+                            <li><a href='#'>Chloe</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-6" class="toggle">Locais</label>
+                <a href="#">Locais</a>
+                <input type="checkbox" id="drop-6" />
+                <ul>
+                    <li><a href='#'>Detroit</a></li>
+                    <li><a href='#'>Cyberlife</a></li>
+                    <li><a href='#'>Jericho</a></li>
+                    <li><a href='#'>Canadá</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Arte Conceitual</a></li>
+        </ul>
+    </nav>
+    <p><i>"Quão longe você iria para ser livre?"</i></p>
+    <section></section>
+    <p><span lang="en">Detroit: Become Human</span> é o quinto título desenvolvido pela <span lang="en">Quantic Dream</span> que expande o legado de criar experiências narrativas emocionantes. Descubra o que realmente significa ser humano numa jornada emocionante de escolhas e consequências. Nessa ambiciosa e emocionante narrativa, cada escolha e ação define não só o destino do personagem, mas de toda cidade e além.</p>
+    <section></section>
+    <p>Ambientado em Detroit no ano de 2038, a cidade foi revitalizada com a invenção e introdução de andróides no convívio cotidiano. Porém, quando estes começam a se comportar como se estivesse vivos, os eventos acabam saindo do controle. Encarne três personagens protagonistas, cada um com habilidades e perspectivas únicas enquanto questionam sua existência e seu próprio valor. Dependendo das escolhas do jogador, todos os personagens jogáveis podem morrer durante a história. Independente disto, a narrativa prossegue. </p>
+    <section></section>
+    <p>Cenas com jogabilidade difícil resultam em pouco tempo para que jogadores analizem situações e respodem de acordo. Além do mais, escolhas anteriores podem desbloquear diálogos e ações no futuro do jogo. Um fluxograma é exibido toda vez que um jogador finaliza um capítulo, permitindo um vislumbre das possibilidades do episódio, e ainda permite ao jogador comparar suas escolhas, mostrando muldialmente aporcentagens de escolhas.</p>
+    <section></section>
+    <p>Para alguns pontos de decisões sensíveis, o jogador tem a habilidade de voltar em um <span lang="en">checkpoint</span> e escolhar um caminho difrente. Esta habilidade não estará disponível durante todo o jogo.</p>
+    <section></section>
+</body>
+
+</html>
