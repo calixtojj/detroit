@@ -109,11 +109,12 @@ li > a:only-child::after {
         display: block;
         padding: 0;
         text-align: center;
-        float: none;
+        float: left;
     }
 
     nav {
         margin: 0;
+        position: relative;
     }
 
     .toggle + a,
@@ -184,6 +185,6 @@ li > a:only-child::after {
     }
 }
 
-[lang="en"]{
+[lang="en"] {
     font-style: italic;
 }
