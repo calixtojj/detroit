@@ -101,12 +101,11 @@ li > a:only-child::after {
 
 table {
     display: block;
-    width: 285px;
+    width: 400px;
     background-color: #f6fafb;
     padding: 5px;
     float: left;
     margin: 15px;
-    position: sticky;
     top: 80px;
 }
 
@@ -129,6 +128,7 @@ th {
 
 tr > td:first-child {
     font-weight: bold;
+    width: 40%;
 }
 
 article {
@@ -138,7 +138,7 @@ article {
     padding: 15px;
     max-width: 1000px;
     text-align: justify;
-    padding-left: 315px;
+    padding-left: 25px;
 }
 
 p:last-of-type {
@@ -169,6 +169,15 @@ h2 {
 
 h3 {
     margin: 0;
+}
+
+figure {
+    display: block;
+    float: right;
+    margin: 15px;
+    text-align: center;
+    border: solid 2px #1e4460;
+    background-color: #fff;
 }
 
 @media all and (max-width : 768px) {
@@ -258,7 +267,7 @@ h3 {
         margin: auto;
         position: relative;
         top: inherit;
-        min-width: 285px;
+        min-width: 400px;
     }
 
     article {
@@ -271,6 +280,19 @@ h3 {
     h2,
     h3 {
         text-align: left;
+    }
+
+    figure {
+        float: none;
+        clear: both;
+        margin: auto;
+        position: relative;
+        top: inherit;
+        max-width: 400px;
+    }
+
+    figure > img {
+        width: 100%;
     }
 }
 
