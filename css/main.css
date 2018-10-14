@@ -180,6 +180,52 @@ li > a:only-child::after {
     }
 }
 
-[lang="en"] {
+table {
+    display: block;
+    width: 285px;
+    background-color: #f6fafb;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}
+
+td,
+th {
+    font-family: "Opens Sans", sans-serif;
+    padding: 5px;
+    vertical-align: text-top;
+}
+
+[colspan="2"] {
+    background-color: #1e4460;
+    text-align: center;
+    color: #f6fafb;
+}
+
+[colspan="2"] > img {
+    background-color: #f6fafb;
+}
+
+tr > td:first-child {
+    font-weight: bold;
+}
+
+article {
+    font-family: "Opens Sans", sans-serif;
+    display: block;
+    background-color: #f6fafb;
+    padding: 15px;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+q {
     font-style: italic;
+}
+
+div.box {
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    border: solid 2px #1e4460;
 }
