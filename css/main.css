@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f6fafb;
+    background-attachment: fixed;
 }
 
 #logo {
@@ -106,7 +107,7 @@ table {
     float: left;
     margin: 15px;
     position: sticky;
-    top: 60px;
+    top: 80px;
 }
 
 td,
@@ -138,6 +139,10 @@ article {
     max-width: 1000px;
     text-align: justify;
     padding-left: 315px;
+}
+
+p:last-of-type {
+    padding-bottom: 15px;
 }
 
 q {
@@ -262,13 +267,32 @@ h3 {
 
     }
 
-    body {
-        background-attachment: fixed;
-    }
-
     h1,
     h2,
     h3 {
         text-align: left;
     }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4d474b;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #4d474b;
+    transition: all .4s ease;
+}
+
+#myBtn:hover {
+    background-color: #7ca6ca;
+    transition: all .4s ease;
 }
