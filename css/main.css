@@ -267,6 +267,7 @@ figure {
         position: relative;
         top: inherit;
         max-width: 100vw;
+        background-color: rgba(246, 250, 251, 0.8);
     }
 
     table:nth-of-type(2) {
