@@ -1,0 +1,110 @@
+    a,
+    a label {
+        cursor: pointer;
+    }
+
+    .video-container {
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        -webkit-transition-position: fixed;
+        position: fixed;
+    }
+
+    section:nth-of-type(1) {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/bg/bg1.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+    }
+
+    section:nth-of-type(2) {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/bg/bg2.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+    }
+
+    section:nth-of-type(3) {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/bg/bg3.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+    }
+
+    section:nth-of-type(4) {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/bg/bg4.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+    }
+
+    section:nth-of-type(5) {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-image: url(/img/bg/bg5.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+    }
+
+    p {
+        background-color: #f6fafb;
+        box-sizing: border-box;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        z-index: 4;
+        font-size: 16pt;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    p:first-of-type {
+        height: 60px;
+    }
+
+    @media all and (max-width : 768px) {
+        .video-container {
+            height: 100vh;
+        }
+
+        video {
+            width: 315%;
+        }
+
+        p:first-of-type {
+            height: 100%;
+        }
+
+        section {
+            width: 315%;
+        }
