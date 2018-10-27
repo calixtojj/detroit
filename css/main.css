@@ -108,7 +108,7 @@ table {
     top: 80px;
 }
 
-table:nth-of-type(2) {
+table:nth-of-type(even) {
     float: right;
 }
 
