@@ -68,8 +68,12 @@ p:first-of-type {
 }
 
 @media all and (max-width : 768px) {
+    .video-container {
+        width: 315vw;
+    }
+
     video {
-        width: 315%;
+        width: 315vw;
     }
 
     p:first-of-type {
@@ -77,5 +81,5 @@ p:first-of-type {
     }
 
     section {
-        width: 315%;
+        width: 315vw;
     }
