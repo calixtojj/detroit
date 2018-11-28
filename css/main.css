@@ -179,8 +179,31 @@ figure {
     border: solid 2px #1e4460;
 }
 
-@media all and (max-width : 768px) {
+button {
+    background-color: #1e4460;
+    border: 0;
+    color: #f6fafb;
+    transition: .4s;
+    -webkit-transition-duration: .4s;
+    width: 40px;
+}
 
+button:hover {
+    background-color: #f6fafb;
+    color: #1e4460;
+}
+
+.slider {
+    display: block;
+}
+
+.sliderContainer {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+}
+
+@media all and (max-width : 768px) {
     #logo {
         display: block;
         padding: 0;
