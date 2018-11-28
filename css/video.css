@@ -6,6 +6,7 @@ a label {
 .video-container {
     height: 100vh;
     position: relative;
+    top: 0;
     z-index: 1;
     overflow: hidden;
 }
@@ -79,10 +80,13 @@ p:first-of-type {
 
     section {
         width: 315vw;
+        background-attachment: scroll;
+        background-position: center;
 
     }
 
     body {
-        overflow-x: hidden;
+        overflow: hidden;
+        overflow-y: scroll;
     }
 }

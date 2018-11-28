@@ -15,12 +15,10 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+    <div class="video-container" id="video">
 
-    <div class="video-container">
-        <video autoplay playsinline controls poster="">
-            <source src="vid/clhoe.mp4" type="video/mp4">
-        </video>
     </div>
+
     <nav>
         <div id="logo"><img src="img/led.png" alt="Android led display" /></div>
         <label for="drop" class="toggle">Menu</label>
@@ -105,6 +103,10 @@
     <p>For some major decision points, players will have the ability to rollback to the beginning of the checkpoint to choose a different path. This will not be available all the time.</p>
     <section></section>
     <script src="js/top-button.js"></script>
+    <script>
+        document.getElementById("video").innerHTML = "<video autoplay playsinline controls poster=\"\"><source id=\"video\" src=\"vid/clhoe.mp4\" type=\"video/mp4\"></video>";
+
+    </script>
 </body>
 
 </html>
