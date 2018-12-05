@@ -1,10 +1,10 @@
-var indice = Math.ceil((Math.random() * 34) + 1);
+var indice = Math.ceil(Math.random() * 50);
 
 document.getElementById("slider").src = "img/concept/" + indice + ".jpg";
 
 function mais() {
-    if (indice == 35) {
-        indice = 2;
+    if (indice == 50) {
+        indice = 1;
         document.getElementById("slider").src = "img/concept/" + indice + ".jpg"
     } else {
         indice++;
@@ -13,8 +13,8 @@ function mais() {
 }
 
 function menos() {
-    if (indice == 2) {
-        indice = 35;
+    if (indice == 1) {
+        indice = 50;
         document.getElementById("slider").src = "img/concept/" + indice + ".jpg"
     } else {
         indice--;
