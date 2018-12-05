@@ -120,7 +120,7 @@ th {
     width: 400px;
 }
 
-[colspan="2"] {
+[colspan="2"], .title{
     background-color: #1e4460;
     text-align: center;
     color: #f6fafb;
